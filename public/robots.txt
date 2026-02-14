@@ -1,0 +1,29 @@
+# Robots.txt - AI Coding Tools Guide
+# このファイルは検索エンジンのクローラーに対して、
+# サイトの構造とインデックス方針を伝えます
+
+# すべてのボットに対するルール
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.next/
+Disallow: /api/
+Disallow: /private/
+
+# Googlebot向けの追加ルール
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bingbot向けのルール
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# その他のボットへの指示
+User-agent: *
+Crawl-delay: 1
+Request-rate: 10/1m
+
+# Sitemap位置の指定
+Sitemap: https://ai-coding-tools-guide.vercel.app/sitemap.xml
