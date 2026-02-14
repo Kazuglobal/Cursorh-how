@@ -131,7 +131,7 @@ export default function GettingStartedPage() {
             tool="Cursor"
             toolHref="/tools/cursor"
             icon={<BookOpen className="h-6 w-6 text-cyan-600 dark:text-cyan-400" />}
-            accentClass="bg-cyan-100 dark:bg-cyan-900/30"
+            accentClass="bg-cyan-100 dark:bg-cyan-900/60"
           />
           <ScenarioCard
             title="既存プロジェクトの開発を加速したい"
@@ -139,7 +139,7 @@ export default function GettingStartedPage() {
             tool="Cursor"
             toolHref="/tools/cursor"
             icon={<Code2 className="h-6 w-6 text-cyan-600 dark:text-cyan-400" />}
-            accentClass="bg-cyan-100 dark:bg-cyan-900/30"
+            accentClass="bg-cyan-100 dark:bg-cyan-900/60"
           />
           <ScenarioCard
             title="大規模なリファクタリング・自動化がしたい"
@@ -147,7 +147,7 @@ export default function GettingStartedPage() {
             tool="Claude Code"
             toolHref="/tools/claude-code"
             icon={<Terminal className="h-6 w-6 text-amber-600 dark:text-amber-400" />}
-            accentClass="bg-amber-100 dark:bg-amber-900/30"
+            accentClass="bg-amber-100 dark:bg-amber-900/60"
           />
           <ScenarioCard
             title="Web調査・データ分析・レポート作成"
@@ -155,7 +155,7 @@ export default function GettingStartedPage() {
             tool="Manus AI"
             toolHref="/tools/manus"
             icon={<BarChart3 className="h-6 w-6 text-violet-600 dark:text-violet-400" />}
-            accentClass="bg-violet-100 dark:bg-violet-900/30"
+            accentClass="bg-violet-100 dark:bg-violet-900/60"
           />
         </div>
       </section>

@@ -31,7 +31,7 @@ function TroubleshootItem({ title, error, cause, solution, code, tips }: Trouble
       </CardHeader>
       <CardContent className="space-y-4">
         {error && (
-          <div className="rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 p-3">
+          <div className="rounded-lg bg-red-50 dark:bg-red-950/50 border border-red-200 dark:border-red-800 p-3">
             <p className="text-xs font-semibold text-red-900 dark:text-red-200 mb-1">エラーメッセージ:</p>
             <code className="text-sm font-mono text-red-800 dark:text-red-300">{error}</code>
           </div>

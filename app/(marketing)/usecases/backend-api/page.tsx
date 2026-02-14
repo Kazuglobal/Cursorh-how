@@ -1186,7 +1186,7 @@ app.post('/auth/login', loginLimiter, authController.login)" language="typescrip
 
       {/* 完了 */}
       <section>
-        <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-blue-200 dark:border-blue-800">
+        <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950/50 dark:to-cyan-950/50 border-blue-200 dark:border-blue-800">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               🚀 API 開発をマスターしました！

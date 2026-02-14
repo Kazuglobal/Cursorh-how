@@ -742,7 +742,7 @@ export default function MobileDevelopmentPage() {
                 <div>
                   <h4 className="font-semibold text-sm mb-1">メリット</h4>
                   <p className="text-sm text-muted-foreground flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400 mt-0.5 shrink-0" />
                     {example.benefit}
                   </p>
                 </div>
@@ -830,7 +830,7 @@ export default function MobileDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: Expo Go でホットリロードが動作しない
               </CardTitle>
             </CardHeader>
@@ -848,7 +848,7 @@ export default function MobileDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: パーミッションエラーが出る（ロケーション、カメラ等）
               </CardTitle>
             </CardHeader>
@@ -880,7 +880,7 @@ export default function MobileDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: API キーが Expo Go で認識されない
               </CardTitle>
             </CardHeader>
@@ -907,7 +907,7 @@ export default function MobileDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: iOS でアプリがビルドできない
               </CardTitle>
             </CardHeader>
@@ -1064,7 +1064,7 @@ export default function MobileDevelopmentPage() {
 
       {/* チェックリスト */}
       <section>
-        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 border-blue-200 dark:border-blue-800">
+        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 border-blue-200 dark:border-blue-800">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               ✅ 実装チェックリスト

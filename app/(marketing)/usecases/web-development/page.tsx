@@ -489,7 +489,7 @@ export default function WebDevelopmentPage() {
                 <div>
                   <h4 className="font-semibold text-sm mb-1">メリット</h4>
                   <p className="text-sm text-muted-foreground flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400 mt-0.5 shrink-0" />
                     {example.benefit}
                   </p>
                 </div>
@@ -604,7 +604,7 @@ export default function WebDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: API Route のテストで import エラーが出る
               </CardTitle>
             </CardHeader>
@@ -629,7 +629,7 @@ export default function WebDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: Tailwind CSS のクラスが反映されない
               </CardTitle>
             </CardHeader>
@@ -655,7 +655,7 @@ export default function WebDevelopmentPage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: AI 生成コードがプロジェクト構造と合わない
               </CardTitle>
             </CardHeader>
@@ -804,7 +804,7 @@ export default function WebDevelopmentPage() {
 
       {/* 完了カード */}
       <section>
-        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 border-blue-200 dark:border-blue-800">
+        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 border-blue-200 dark:border-blue-800">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               🚀 実装チェックリスト

@@ -19,9 +19,9 @@ export function ToolCard({ tool }: ToolCardProps) {
       <div className="mb-4">
         <div className={cn(
           "inline-flex items-center justify-center rounded-lg px-3 py-1 text-xs font-medium mb-3",
-          tool.id === "cursor" && "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
-          tool.id === "claude-code" && "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
-          tool.id === "manus" && "bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
+          tool.id === "cursor" && "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/60 dark:text-cyan-300",
+          tool.id === "claude-code" && "bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-300",
+          tool.id === "manus" && "bg-violet-100 text-violet-800 dark:bg-violet-900/60 dark:text-violet-300",
         )}>
           {tool.category}
         </div>

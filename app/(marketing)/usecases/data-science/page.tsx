@@ -809,7 +809,7 @@ export default function DataSciencePage() {
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: データリークが発生している可能性（前処理がテストデータに影響）
               </CardTitle>
             </CardHeader>
@@ -840,7 +840,7 @@ X_test_scaled = scaler.transform(X_test)`}
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: モデルの予測精度が訓練時と大きく異なる（過学習）
               </CardTitle>
             </CardHeader>
@@ -863,7 +863,7 @@ X_test_scaled = scaler.transform(X_test)`}
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: Jupyter Notebook のコードが本番スクリプトで動作しない
               </CardTitle>
             </CardHeader>
@@ -880,7 +880,7 @@ X_test_scaled = scaler.transform(X_test)`}
           <Card>
             <CardHeader>
               <CardTitle className="text-base flex items-start gap-2">
-                <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5 shrink-0" />
+                <AlertCircle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 shrink-0" />
                 Q: requirements.txt が古く、新規環境でパッケージのバージョン競合
               </CardTitle>
             </CardHeader>
@@ -1019,7 +1019,7 @@ numpy==1.24.3`}
 
       {/* チェックリスト */}
       <section>
-        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 border-blue-200 dark:border-blue-800">
+        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 border-blue-200 dark:border-blue-800">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               ✅ 実装チェックリスト

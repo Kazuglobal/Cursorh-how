@@ -972,15 +972,15 @@ __tests__/（15 テスト）
             <CardContent className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>バンドルサイズ削減</span>
-                <span className="font-semibold text-green-600">-2 KB</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">-2 KB</span>
               </div>
               <div className="flex justify-between">
                 <span>First Contentful Paint</span>
-                <span className="font-semibold text-green-600">-50 ms</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">-50 ms</span>
               </div>
               <div className="flex justify-between">
                 <span>不要な再レンダリング削減</span>
-                <span className="font-semibold text-green-600">-30%</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">-30%</span>
               </div>
             </CardContent>
           </Card>
@@ -992,15 +992,15 @@ __tests__/（15 テスト）
             <CardContent className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>型安全性</span>
-                <span className="font-semibold text-green-600">100%</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">100%</span>
               </div>
               <div className="flex justify-between">
                 <span>テストカバレッジ</span>
-                <span className="font-semibold text-green-600">87%</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">87%</span>
               </div>
               <div className="flex justify-between">
                 <span>可読性スコア</span>
-                <span className="font-semibold text-green-600">+45%</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">+45%</span>
               </div>
             </CardContent>
           </Card>
@@ -1012,15 +1012,15 @@ __tests__/（15 テスト）
             <CardContent className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>コンポーネント行数</span>
-                <span className="font-semibold text-green-600">120 → 40 行</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">120 → 40 行</span>
               </div>
               <div className="flex justify-between">
                 <span>関数の平均行数</span>
-                <span className="font-semibold text-green-600">50 → 20 行</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">50 → 20 行</span>
               </div>
               <div className="flex justify-between">
                 <span>IDE オートコンプリート</span>
-                <span className="font-semibold text-green-600">有効</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">有効</span>
               </div>
             </CardContent>
           </Card>
@@ -1032,15 +1032,15 @@ __tests__/（15 テスト）
             <CardContent className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>カスタムフック数</span>
-                <span className="font-semibold text-green-600">+2</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">+2</span>
               </div>
               <div className="flex justify-between">
                 <span>API サービス統一</span>
-                <span className="font-semibold text-green-600">✓ 完全</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">✓ 完全</span>
               </div>
               <div className="flex justify-between">
                 <span>他コンポーネント再利用可</span>
-                <span className="font-semibold text-green-600">✓ 可能</span>
+                <span className="font-semibold text-green-600 dark:text-green-400">✓ 可能</span>
               </div>
             </CardContent>
           </Card>

@@ -151,21 +151,21 @@ export function ToolQuiz() {
 
   const colorMap = {
     cyan: {
-      bg: "bg-cyan-500/10",
+      bg: "bg-cyan-50 dark:bg-cyan-900/50",
       bar: "bg-cyan-500",
-      text: "text-cyan-700 dark:text-cyan-400",
+      text: "text-cyan-700 dark:text-cyan-300",
       border: "border-cyan-500",
     },
     amber: {
-      bg: "bg-amber-500/10",
+      bg: "bg-amber-50 dark:bg-amber-900/50",
       bar: "bg-amber-500",
-      text: "text-amber-700 dark:text-amber-400",
+      text: "text-amber-700 dark:text-amber-300",
       border: "border-amber-500",
     },
     violet: {
-      bg: "bg-violet-500/10",
+      bg: "bg-violet-50 dark:bg-violet-900/50",
       bar: "bg-violet-500",
-      text: "text-violet-700 dark:text-violet-400",
+      text: "text-violet-700 dark:text-violet-300",
       border: "border-violet-500",
     },
   }

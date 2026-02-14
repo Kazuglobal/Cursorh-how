@@ -21,17 +21,17 @@ function ChecklistItem({ title, description, icon, status }: ChecklistItemProps)
   const statusConfig = {
     required: {
       label: "必須",
-      className: "border-red-500 bg-red-50 dark:bg-red-950/30",
+      className: "border-red-500 bg-red-50 dark:bg-red-950/50",
       iconColor: "text-red-600 dark:text-red-400",
     },
     recommended: {
       label: "推奨",
-      className: "border-amber-500 bg-amber-50 dark:bg-amber-950/30",
+      className: "border-amber-500 bg-amber-50 dark:bg-amber-950/50",
       iconColor: "text-amber-600 dark:text-amber-400",
     },
     optional: {
       label: "任意",
-      className: "border-green-500 bg-green-50 dark:bg-green-950/30",
+      className: "border-green-500 bg-green-50 dark:bg-green-950/50",
       iconColor: "text-green-600 dark:text-green-400",
     },
   }

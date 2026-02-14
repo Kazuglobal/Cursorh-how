@@ -222,7 +222,7 @@ export const getApiEndpoint = () => {
         <div className="space-y-6">
           <SecurityTip
             title="個人情報を AI に送らない"
-            icon={<AlertCircle className="h-5 w-5 text-red-600" />}
+            icon={<AlertCircle className="h-5 w-5 text-red-600 dark:text-red-400" />}
             importance="必須"
             content="ユーザーの個人情報（メールアドレス、電話番号、住所、クレジットカード番号など）を Claude Code や他の AI に送信しないでください。AI は学習データに含める可能性があり、プライバシー侵害につながります。"
             codeExample={`// ❌ NG: 実ユーザーの情報を送信
@@ -461,7 +461,7 @@ GRANT SELECT, INSERT, UPDATE ON public.products TO app_user;
       {/* セキュリティアンチパターン */}
       <section>
         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-          <XCircle className="h-6 w-6 text-red-600" />
+          <XCircle className="h-6 w-6 text-red-600 dark:text-red-400" />
           セキュリティアンチパターン（避けるべき使い方）
         </h2>
         <div className="space-y-6">
@@ -642,7 +642,7 @@ const agent = new https.Agent({
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Shield className="h-5 w-5 text-red-600" />
+                <Shield className="h-5 w-5 text-red-600 dark:text-red-400" />
                 必須チェック項目（全て満たす必要あり）
               </CardTitle>
             </CardHeader>
@@ -672,7 +672,7 @@ const agent = new https.Agent({
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Zap className="h-5 w-5 text-yellow-600" />
+                <Zap className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                 推奨チェック項目
               </CardTitle>
             </CardHeader>

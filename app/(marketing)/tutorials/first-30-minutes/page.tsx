@@ -231,7 +231,7 @@ export default function FirstTutorialPage() {
 
       {/* おめでとうございます */}
       <section>
-        <Card className="bg-gradient-to-r from-green-50 to-cyan-50 dark:from-green-950/30 dark:to-cyan-950/30 border-green-200 dark:border-green-800">
+        <Card className="bg-gradient-to-r from-green-50 to-cyan-50 dark:from-green-950/50 dark:to-cyan-950/50 border-green-200 dark:border-green-800">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               🎉 おめでとうございます！

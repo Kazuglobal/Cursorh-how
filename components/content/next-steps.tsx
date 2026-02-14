@@ -21,17 +21,17 @@ const difficultyConfig = {
   beginner: {
     label: "初級",
     color: "text-green-600 dark:text-green-400",
-    bg: "bg-green-50 dark:bg-green-950/50",
+    bg: "bg-green-50 dark:bg-green-900/60",
   },
   intermediate: {
     label: "中級",
-    color: "text-yellow-600 dark:text-yellow-400",
-    bg: "bg-yellow-50 dark:bg-yellow-950/50",
+    color: "text-yellow-600 dark:text-yellow-300",
+    bg: "bg-yellow-50 dark:bg-yellow-900/60",
   },
   advanced: {
     label: "上級",
     color: "text-red-600 dark:text-red-400",
-    bg: "bg-red-50 dark:bg-red-950/50",
+    bg: "bg-red-50 dark:bg-red-900/60",
   },
 }
 

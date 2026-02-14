@@ -64,34 +64,34 @@ function ModelFlowchart() {
 
   return (
     <div className="space-y-6">
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 rounded-lg border border-blue-200 dark:border-blue-800 p-6">
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/50 dark:to-indigo-950/50 rounded-lg border border-blue-200 dark:border-blue-800 p-6">
         <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
           <Target className="h-5 w-5" />
           モデル選択フローチャート
         </h3>
         <div className="space-y-3 text-sm">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center font-bold">1</div>
+            <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100 flex items-center justify-center font-bold">1</div>
             <span>タスクの複雑さを評価</span>
           </div>
           <div className="flex items-center gap-3 ml-8">
             <span className="text-amber-600 dark:text-amber-400">→</span>
-            <span><strong>簡単</strong>（説明、リファクタリング提案）<strong className="text-green-600">Haiku 4.5</strong></span>
+            <span><strong>簡単</strong>（説明、リファクタリング提案）<strong className="text-green-600 dark:text-green-400">Haiku 4.5</strong></span>
           </div>
           <div className="flex items-center gap-3 ml-8">
             <span className="text-amber-600 dark:text-amber-400">→</span>
-            <span><strong>中程度</strong>（通常のコード生成）<strong className="text-blue-600">Sonnet 4.5</strong></span>
+            <span><strong>中程度</strong>（通常のコード生成）<strong className="text-blue-600 dark:text-blue-400">Sonnet 4.5</strong></span>
           </div>
           <div className="flex items-center gap-3 ml-8">
             <span className="text-amber-600 dark:text-amber-400">→</span>
-            <span><strong>複雑</strong>（アーキテクチャ、複雑な推論）<strong className="text-purple-600">Opus 4.6</strong></span>
+            <span><strong>複雑</strong>（アーキテクチャ、複雑な推論）<strong className="text-purple-600 dark:text-purple-400">Opus 4.6</strong></span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center font-bold">2</div>
+            <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100 flex items-center justify-center font-bold">2</div>
             <span>予想トークン使用量を確認</span>
           </div>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center font-bold">3</div>
+            <div className="w-8 h-8 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100 flex items-center justify-center font-bold">3</div>
             <span>月間予算をシミュレーション（下記参照）</span>
           </div>
         </div>
@@ -107,7 +107,7 @@ function ModelFlowchart() {
             <CardContent className="space-y-3 text-sm">
               <div>
                 <p className="text-xs font-semibold text-muted-foreground">価格（100万トークンあたり）</p>
-                <p className="text-lg font-bold text-green-600">
+                <p className="text-lg font-bold text-green-600 dark:text-green-400">
                   入力: ${model.inputPrice.toFixed(2)} | 出力: ${model.outputPrice.toFixed(2)}
                 </p>
               </div>
@@ -117,7 +117,7 @@ function ModelFlowchart() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-muted-foreground mb-1">節約効果</p>
-                <p className="text-xs bg-green-50 dark:bg-green-950/30 text-green-700 dark:text-green-300 px-2 py-1 rounded">
+                <p className="text-xs bg-green-50 dark:bg-green-950/50 text-green-700 dark:text-green-300 px-2 py-1 rounded">
                   {model.savings}
                 </p>
               </div>
@@ -200,9 +200,9 @@ __pycache__/`
   ]
 
   const difficultyColors = {
-    easy: "bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-800",
-    medium: "bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800",
-    hard: "bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-800",
+    easy: "bg-green-50 dark:bg-green-950/50 border-green-200 dark:border-green-800",
+    medium: "bg-amber-50 dark:bg-amber-950/50 border-amber-200 dark:border-amber-800",
+    hard: "bg-red-50 dark:bg-red-950/50 border-red-200 dark:border-red-800",
   }
 
   const difficultyLabels = {
@@ -222,7 +222,7 @@ __pycache__/`
                 <p className="text-sm text-muted-foreground mt-1">{tech.description}</p>
               </div>
               <div className="text-right">
-                <div className="text-2xl font-bold text-green-600">{tech.reduction}%</div>
+                <div className="text-2xl font-bold text-green-600 dark:text-green-400">{tech.reduction}%</div>
                 <p className="text-xs text-muted-foreground">削減率</p>
               </div>
             </div>
@@ -286,19 +286,19 @@ function BudgetSimulator() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-slate-50 dark:bg-slate-900 p-3 rounded">
+                <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded">
                   <p className="text-xs font-semibold text-muted-foreground">1日あたり</p>
-                  <p className="text-xl font-bold text-blue-600">${dailyCost.toFixed(2)}</p>
+                  <p className="text-xl font-bold text-blue-600 dark:text-blue-400">${dailyCost.toFixed(2)}</p>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900 p-3 rounded">
+                <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded">
                   <p className="text-xs font-semibold text-muted-foreground">月間（{scenario.workingDaysPerMonth}日）</p>
-                  <p className="text-xl font-bold text-green-600">${monthlyCost.toFixed(2)}</p>
+                  <p className="text-xl font-bold text-green-600 dark:text-green-400">${monthlyCost.toFixed(2)}</p>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900 p-3 rounded">
+                <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded">
                   <p className="text-xs font-semibold text-muted-foreground">年間</p>
-                  <p className="text-xl font-bold text-purple-600">${yearlyCost.toFixed(2)}</p>
+                  <p className="text-xl font-bold text-purple-600 dark:text-purple-400">${yearlyCost.toFixed(2)}</p>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900 p-3 rounded">
+                <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded">
                   <p className="text-xs font-semibold text-muted-foreground">推奨プラン</p>
                   <p className="text-sm font-bold">
                     {monthlyCost < 20 ? "API従量課金" : monthlyCost < 100 ? "Pro" : "Max"}
@@ -331,10 +331,10 @@ function SubscriptionComparison() {
 
   return (
     <div className="space-y-6">
-      <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+      <div className="bg-blue-50 dark:bg-blue-950/50 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
         <div className="mb-4">
           <label className="text-sm font-semibold block mb-2">
-            月間予想API使用料: <span className="text-xl font-bold text-blue-600">${monthlyUsage}</span>
+            月間予想API使用料: <span className="text-xl font-bold text-blue-600 dark:text-blue-400">${monthlyUsage}</span>
           </label>
           <input
             type="range"
@@ -381,11 +381,11 @@ function SubscriptionComparison() {
             <p className="text-xs text-muted-foreground">Claude.ai でPro アクセス</p>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="bg-green-50 dark:bg-green-950/30 p-3 rounded">
+            <div className="bg-green-50 dark:bg-green-950/50 p-3 rounded">
               <p className="text-xs font-semibold text-muted-foreground">月間コスト</p>
-              <p className="text-2xl font-bold text-green-600">$20</p>
+              <p className="text-2xl font-bold text-green-600 dark:text-green-400">$20</p>
               {savings.proVsApi > 0 && (
-                <p className="text-xs text-green-600 font-semibold mt-1">
+                <p className="text-xs text-green-600 dark:text-green-400 font-semibold mt-1">
                   節約: ${savings.proVsApi}/月
                 </p>
               )}
@@ -409,11 +409,11 @@ function SubscriptionComparison() {
             <p className="text-xs text-muted-foreground">Claude.ai Max サブスク</p>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="bg-purple-50 dark:bg-purple-950/30 p-3 rounded">
+            <div className="bg-purple-50 dark:bg-purple-950/50 p-3 rounded">
               <p className="text-xs font-semibold text-muted-foreground">月間コスト</p>
-              <p className="text-2xl font-bold text-purple-600">$200</p>
+              <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">$200</p>
               {savings.maxVsApi > 0 && (
-                <p className="text-xs text-purple-600 font-semibold mt-1">
+                <p className="text-xs text-purple-600 dark:text-purple-400 font-semibold mt-1">
                   節約: ${savings.maxVsApi}/月
                 </p>
               )}
@@ -579,7 +579,7 @@ function CompactCommandGuide() {
             </p>
           </div>
 
-          <div className="bg-slate-50 dark:bg-slate-900 p-4 rounded">
+          <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded">
             <h4 className="font-semibold mb-2">使用タイミング</h4>
             <ul className="text-sm space-y-2 text-muted-foreground">
               <li>• チャットが 100+ メッセージを超えた</li>
@@ -598,7 +598,7 @@ function CompactCommandGuide() {
 /compress`} language="bash" />
           </div>
 
-          <div className="bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 p-4 rounded">
+          <div className="bg-green-50 dark:bg-green-950/50 border border-green-200 dark:border-green-800 p-4 rounded">
             <h4 className="font-semibold mb-2">実行後の流れ</h4>
             <ol className="text-sm space-y-2">
               <li><strong>1. 履歴の分析:</strong> AI が過去のやり取りを自動解析</li>
@@ -795,7 +795,7 @@ export default function CostOptimizationPage() {
     <div className="space-y-12">
       <div>
         <h1 className="text-3xl font-extrabold tracking-tight mb-3 flex items-center gap-2">
-          <DollarSign className="h-8 w-8 text-green-600" />
+          <DollarSign className="h-8 w-8 text-green-600 dark:text-green-400" />
           コスト最適化ガイド
         </h1>
         <p className="text-lg text-muted-foreground">

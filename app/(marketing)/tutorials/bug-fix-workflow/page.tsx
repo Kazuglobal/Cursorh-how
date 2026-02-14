@@ -793,7 +793,7 @@ handleClick = () => { ... }`}
 
       {/* 実践例 */}
       <section>
-        <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-950/30 dark:to-orange-950/30 border-yellow-200 dark:border-yellow-800">
+        <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-950/50 dark:to-orange-950/50 border-yellow-200 dark:border-yellow-800">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               実例：実際のバグ修正例
