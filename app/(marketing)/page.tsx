@@ -12,19 +12,19 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-10 sm:space-y-16">
       {/* Hero Section */}
-      <section className="text-center py-12 lg:py-16">
+      <section className="text-center py-8 sm:py-12 lg:py-16">
         <div className="animate-fade-in-up inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-6">
           <Sparkles className="h-4 w-4" />
           2026年最新版
         </div>
-        <h1 className="animate-fade-in-up text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4" style={{ animationDelay: '0.1s' }}>
+        <h1 className="animate-fade-in-up text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4" style={{ animationDelay: '0.1s' }}>
           AI コーディングツール
           <br />
           <span className="text-primary">完全ガイド</span>
         </h1>
-        <p className="animate-fade-in-up mx-auto max-w-2xl text-lg text-muted-foreground mb-8" style={{ animationDelay: '0.2s' }}>
+        <p className="animate-fade-in-up mx-auto max-w-2xl text-base sm:text-lg text-muted-foreground mb-8" style={{ animationDelay: '0.2s' }}>
           Cursor、Claude Code、Manus AI &#8212;
           3つの主要AIツールの機能・料金・使い方を日本語で徹底解説。
           あなたに最適なツールが見つかります。
@@ -63,42 +63,42 @@ export default function HomePage() {
       </section>
 
       {/* Quick Comparison */}
-      <section className="animate-fade-in-up rounded-xl border border-border bg-card p-6 lg:p-8">
-        <h2 className="text-2xl font-bold mb-4">ざっくり比較</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+      <section className="animate-fade-in-up rounded-xl border border-border bg-card p-4 sm:p-6 lg:p-8">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">ざっくり比較</h2>
+        <div className="overflow-x-auto -mx-4 sm:mx-0">
+          <table className="w-full text-xs sm:text-sm">
             <thead>
               <tr className="border-b border-border">
-                <th className="py-3 px-4 text-left font-semibold">項目</th>
-                <th className="py-3 px-4 text-center font-semibold text-cyan-600 dark:text-cyan-400">Cursor</th>
-                <th className="py-3 px-4 text-center font-semibold text-amber-600 dark:text-amber-400">Claude Code</th>
-                <th className="py-3 px-4 text-center font-semibold text-violet-600 dark:text-violet-400">Manus AI</th>
+                <th className="py-2 sm:py-3 px-2 sm:px-4 text-left font-semibold">項目</th>
+                <th className="py-2 sm:py-3 px-2 sm:px-4 text-center font-semibold text-cyan-600 dark:text-cyan-400">Cursor</th>
+                <th className="py-2 sm:py-3 px-2 sm:px-4 text-center font-semibold text-amber-600 dark:text-amber-400">Claude Code</th>
+                <th className="py-2 sm:py-3 px-2 sm:px-4 text-center font-semibold text-violet-600 dark:text-violet-400">Manus AI</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b border-border">
-                <td className="py-3 px-4 font-medium">形式</td>
-                <td className="py-3 px-4 text-center">IDE（エディタ）</td>
-                <td className="py-3 px-4 text-center">CLI（ターミナル）</td>
-                <td className="py-3 px-4 text-center">Webアプリ</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 font-medium">形式</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">IDE</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">CLI</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">Web</td>
               </tr>
               <tr className="border-b border-border">
-                <td className="py-3 px-4 font-medium">得意なこと</td>
-                <td className="py-3 px-4 text-center">日常のコーディング</td>
-                <td className="py-3 px-4 text-center">大規模コード変更</td>
-                <td className="py-3 px-4 text-center">リサーチ・データ分析</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 font-medium">得意</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">日常コーディング</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">大規模変更</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">リサーチ</td>
               </tr>
               <tr className="border-b border-border">
-                <td className="py-3 px-4 font-medium">対象ユーザー</td>
-                <td className="py-3 px-4 text-center">初心者〜上級者</td>
-                <td className="py-3 px-4 text-center">中級〜上級者</td>
-                <td className="py-3 px-4 text-center">全ユーザー</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 font-medium">対象</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">初心者〜</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">中級〜</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">全員</td>
               </tr>
               <tr>
-                <td className="py-3 px-4 font-medium">料金</td>
-                <td className="py-3 px-4 text-center">無料〜$20/月</td>
-                <td className="py-3 px-4 text-center">$20/月〜</td>
-                <td className="py-3 px-4 text-center">$39/月〜</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 font-medium">料金</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">〜$20</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">$20〜</td>
+                <td className="py-2 sm:py-3 px-2 sm:px-4 text-center">$39〜</td>
               </tr>
             </tbody>
           </table>

@@ -22,15 +22,15 @@ interface SecurityTipProps {
 
 function SecurityTip({ title, icon, content, importance, codeExample, codeLanguage }: SecurityTipProps) {
   const importanceColor = {
-    必須: "border-red-200 bg-red-50",
-    推奨: "border-yellow-200 bg-yellow-50",
-    任意: "border-blue-200 bg-blue-50",
+    必須: "border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-950/30",
+    推奨: "border-yellow-200 bg-yellow-50 dark:border-yellow-800 dark:bg-yellow-950/30",
+    任意: "border-blue-200 bg-blue-50 dark:border-blue-800 dark:bg-blue-950/30",
   }
 
   const importanceBadgeColor = {
-    必須: "bg-red-100 text-red-800",
-    推奨: "bg-yellow-100 text-yellow-800",
-    任意: "bg-blue-100 text-blue-800",
+    必須: "bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300",
+    推奨: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300",
+    任意: "bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300",
   }
 
   return (
@@ -38,7 +38,7 @@ function SecurityTip({ title, icon, content, importance, codeExample, codeLangua
       <CardHeader>
         <div className="flex items-start justify-between">
           <div className="flex items-start gap-3 flex-1">
-            <div className="inline-flex items-center justify-center rounded-lg p-2 bg-white border">
+            <div className="inline-flex items-center justify-center rounded-lg p-2 bg-white dark:bg-muted border shrink-0">
               {icon}
             </div>
             <div>
@@ -80,7 +80,7 @@ function AntiPattern({ title, wrongCode, correctCode, explanation }: AntiPattern
         <div>
           <div className="flex items-center gap-2 mb-2">
             <XCircle className="h-4 w-4 text-red-500" />
-            <p className="text-sm font-semibold text-red-700">避けるべき（NG）パターン</p>
+            <p className="text-sm font-semibold text-red-700 dark:text-red-400">避けるべき（NG）パターン</p>
           </div>
           <CodeBlock code={wrongCode} language="typescript" />
         </div>
@@ -88,7 +88,7 @@ function AntiPattern({ title, wrongCode, correctCode, explanation }: AntiPattern
         <div>
           <div className="flex items-center gap-2 mb-2">
             <CheckCircle2 className="h-4 w-4 text-green-500" />
-            <p className="text-sm font-semibold text-green-700">推奨パターン</p>
+            <p className="text-sm font-semibold text-green-700 dark:text-green-400">推奨パターン</p>
           </div>
           <CodeBlock code={correctCode} language="typescript" />
         </div>

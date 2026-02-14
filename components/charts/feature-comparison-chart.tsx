@@ -121,7 +121,7 @@ function SVGRadarChart({ tool, size = 200, opacity = 0.3 }: SVGRadarChartProps) 
   const colors = colorMap[tool.color as keyof typeof colorMap]
 
   return (
-    <svg width={size} height={size} className="mx-auto">
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="mx-auto w-full max-w-[220px] h-auto">
       {/* グリッド */}
       {gridLines.map((points, idx) => (
         <polygon

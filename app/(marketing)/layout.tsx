@@ -15,7 +15,7 @@ export default function MarketingLayout({
       <Header />
       <div className="flex flex-1 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <Sidebar />
-        <main className="flex-1 py-8 lg:pl-8 min-w-0">
+        <main className="flex-1 py-4 sm:py-8 lg:pl-8 min-w-0">
           <Breadcrumbs />
           {children}
         </main>

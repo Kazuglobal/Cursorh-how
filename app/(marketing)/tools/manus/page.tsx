@@ -105,11 +105,6 @@ export default function ManusOverviewPage() {
         </div>
       </section>
 
-      <Callout type="warning" title="セキュリティに関する注意">
-        Manus AIの開発元は中国企業（Monica.im）です。機密データのアップロードには注意してください。
-        APIキーやパスワードなどの秘密情報を渡すことは推奨されません。
-      </Callout>
-
       <div className="flex flex-col sm:flex-row gap-4">
         <Link href="/tools/manus/setup">
           <Button size="lg">

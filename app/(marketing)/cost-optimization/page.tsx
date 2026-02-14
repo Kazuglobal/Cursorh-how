@@ -285,7 +285,7 @@ function BudgetSimulator() {
               <p className="text-sm text-muted-foreground">{scenario.description}</p>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded">
                   <p className="text-xs font-semibold text-muted-foreground">1日あたり</p>
                   <p className="text-xl font-bold text-blue-600 dark:text-blue-400">${dailyCost.toFixed(2)}</p>

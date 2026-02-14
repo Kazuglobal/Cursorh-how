@@ -55,8 +55,8 @@ export function CodeBlock({ code, language = "text", title, showLineNumbers = fa
           </button>
         </div>
       )}
-      <div className="overflow-x-auto bg-muted/20 p-4">
-        <pre className="text-sm leading-relaxed">
+      <div className="overflow-x-auto bg-muted/20 p-2 sm:p-4">
+        <pre className="text-xs sm:text-sm leading-relaxed">
           <code className={cn("font-mono", `language-${language}`)}>
             {showLineNumbers
               ? lines.map((line, i) => (

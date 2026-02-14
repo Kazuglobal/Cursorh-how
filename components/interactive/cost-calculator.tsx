@@ -258,7 +258,7 @@ export function CostCalculator() {
         {/* 年間コスト */}
         <div className="pt-4 border-t">
           <h5 className="text-sm font-semibold mb-3">年間コスト試算</h5>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {costs.map((tool) => {
               const colors = colorMap[tool.color as keyof typeof colorMap]
               const yearlyCost = tool.cost * 12

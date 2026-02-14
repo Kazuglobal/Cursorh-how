@@ -3,16 +3,18 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
-import { Menu, X, Sun, Moon, Code2 } from "lucide-react"
+import { Menu, X, Sun, Moon, Code2, Search } from "lucide-react"
 import { useTheme } from "next-themes"
 import { cn } from "@/lib/utils"
 import { mainNavigation } from "@/lib/navigation"
 import { SearchButton } from "@/components/search/search-button"
+import { SearchDialog } from "@/components/search/search-dialog"
 
 export function Header() {
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [searchOpen, setSearchOpen] = useState(false)
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark")
@@ -51,6 +53,14 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <SearchButton className="hidden md:flex w-48" />
+          <button
+            onClick={() => setSearchOpen(true)}
+            className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors md:hidden"
+            aria-label="検索"
+          >
+            <Search className="h-5 w-5" />
+          </button>
+          <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
           <button
             onClick={toggleTheme}
             className="inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-accent-foreground transition-colors"

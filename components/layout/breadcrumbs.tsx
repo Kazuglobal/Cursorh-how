@@ -67,7 +67,7 @@ export function Breadcrumbs() {
 
   return (
     <nav aria-label="パンくずナビゲーション" className="mb-6">
-      <ol className="flex items-center gap-2 text-sm text-muted-foreground">
+      <ol className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-muted-foreground">
         {/* ホームリンク */}
         <li>
           <Link
